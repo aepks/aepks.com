@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brothers page for Alpha Epsilon of Phi Kappa Sigma">
+
+    <title>Brothers &ndash; Alpha Epsilon of Phi Kappa Sigma</title>
+    
+    <!-- Import Pure components -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    
+    <!--[if lte IE 8]>
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+    <!--<![endif]-->
+    
+    <!-- Import other components -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Import css -->
+        <link rel="stylesheet" href="../css/layouts/aepks.css">
+    <!--<![endif]-->
+    
+    <!-- Import JQuery -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Reading JSON; Read list of brothers and other related information -->
+<script>
+    
+    $(document).ready(function(){
+        $.ajax({
+            url: "../data/brothers_112016.json", // path to file
+            dataType: 'json', // type of file (text, json, xml, etc)
+            success: function(data) { // callback for successful completion
+                makeExecList(data);
+                makeOfficerList(data);
+                makeActiveList(data);
+                makeAdvisorList(data);
+            },
+            error: function() { // callback if there's an error
+                console.log ("error");
+            }
+        });     
+    });
+    
+    // Exec Board List
+    function makeExecList(data) {
+        for (i = 0; i < data.exec.length; i++) {
+            var name = data.exec[i].name;
+            var id = (data.active.length > data.exec[i].id) ? data.exec[i].id : 0; // make sure it doesn't overflow
+            var visible = data.exec[i].visible;
+            
+            if (visible != 0 && id != 0) {
+                $("#exec").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + data.active[id].img + "'> <h3 class='content-head'>" + data.active[id].name + " " + data.active[id].lastname + "</h3> <p>" + name + "</p> </div>");
+            }
+        }
+    }
+    
+    // Officer List
+    function makeOfficerList(data) {
+        for (i = 0; i < data.officer.length; i++) {
+            var name = data.officer[i].name;
+            var id = (data.active.length > data.officer[i].id) ? data.officer[i].id : 0;
+            var visible = data.officer[i].visible;
+            
+            if (visible != 0 && id != 0) {
+                $("#officer").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + data.active[id].img + "'> <h3 class='content-head'>" + data.active[id].name + " " + data.active[id].lastname + "</h3> <p>" + name + "</p> </div>");
+            }
+        }
+    }
+    
+    // Active List
+    function makeActiveList(data) {
+        // Sort alphabetically by last name
+        data.active.sort( function( a, b ) {
+            a = a.lastname.toLowerCase();
+            b = b.lastname.toLowerCase();
+
+            return a < b ? -1 : a > b ? 1 : 0;
+        });
+        
+        for (i = 0; i < data.active.length; i++) {
+            var img = data.active[i].img;
+            var name = data.active[i].name;
+            var lastname = data.active[i].lastname;
+            var classOf = data.active[i].classOf;
+            var isOfficer = data.active[i].isOfficer;
+            var visible = data.active[i].visible;
+            
+            // list all active brothers' name in console
+            console.log(name + " " + lastname);
+                    
+            if (visible != 0) {
+                $("#active").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + img + "'> <h3 class='content-head'>" + name + " " + lastname + "</h3> <p>" + classOf + "</p> </div>");
+            }
+        }
+    }
+    
+    // Advisor List
+    function makeAdvisorList(data) {
+        for (i = 0; i < data.advisor.length; i++) {
+            var img = data.advisor[i].img;
+            var name = data.advisor[i].name;
+            var title = data.advisor[i].title;
+            var visible = data.advisor[i].visible;
+                    
+            if (visible != 0) {
+                $("#advisor").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + img + "'> <h3 class='content-head'>" + name + "</h3> <p>" + title + "</p> </div>");
+            }
+        }
+    }
+
+</script>
+
+</head>
+<body>
+
+<!-- Nav Bar -->
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-scrollable pure-menu-fixed">
+        <a class="pure-menu-heading" href="../index.html">AEPKS</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="../fraternity/" class="pure-menu-link">Fraternity</a></li>
+            <li class="pure-menu-item"><a href="../brothers/" class="pure-menu-link">Brothers</a></li>
+            <li class="pure-menu-item"><a href="../events/" class="pure-menu-link">Events</a></li>
+            <li class="pure-menu-item"><a href="../smoker/" class="pure-menu-link">Smoker</a></li>
+            <li class="pure-menu-item"><a href="../contact/" class="pure-menu-link">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Title -->
+<div class="splash-container bg-3">
+    <div class="splash">
+        <h1 class="splash-head">Brothers</h1>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="content-wrapper">
+    
+    <!-- Executive Board -->
+    <div class="content">
+        <h2 class="content-head is-center">Executive Board</h2>
+        <div id="exec">
+            <!-- APPEND FROM SCRIPT -->
+        </div>
+    </div>
+    
+    <!-- Officers -->
+    <div class="content">
+        <h2 class="content-head is-center">Officers</h2>
+        <div id="officer">
+            <!-- APPEND FROM SCRIPT -->
+        </div>
+    </div>
+    
+    <!-- Active -->
+    <div class="content">
+        <h2 class="content-head is-center">Active Members</h2>
+        <div id="active">
+            <!-- APPEND FROM SCRIPT -->
+        </div>
+    </div>
+    
+    <!-- Advisor -->
+    <div class="content">
+        <h2 class="content-head is-center">Advisors</h2>
+        <div id="advisor">
+            <!-- APPEND FROM SCRIPT -->
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer l-box is-center">
+        ©2016 <a href="http://pks.org/" class="footer-link">Phi Kappa Sigma International Fraternity</a>, Inc. - All Rights Reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
