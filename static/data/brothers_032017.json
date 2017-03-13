@@ -1,0 +1,815 @@
+{
+  "exec": [
+    {
+      "name": "Alpha (President)",
+      "id": "17",
+      "visible": "1"
+    },
+    {
+      "name": "Beta (Vice President / Internal Operations)",
+      "id": "7",
+      "visible": "1"
+    },
+    {
+      "name": "Pi (Scholarship Chair)",
+      "id": "27",
+      "visible": "1"
+    },
+    {
+      "name": "Iota (New Member Educator)",
+      "id": "58",
+      "visible": "1"
+    },
+    {
+      "name": "Tau (Treasurer)",
+      "id": "16",
+      "visible": "1"
+    },
+    {
+      "name": "Sigma (Secretary)",
+      "id": "23",
+      "visible": "1"
+    },
+    {
+      "name": "Chi (Recruitment Chair)",
+      "id": "8",
+      "visible": "1"
+    },
+    {
+      "name": "Delta",
+      "id": "0",
+      "visible": "0"
+    }
+  ],
+  "officer": [
+    {
+      "name": "Theta One (Kitchen Manager)",
+      "id": "6",
+      "visible": "1"
+    },
+    {
+      "name": "Theta Two (House Manager)",
+      "id": "56",
+      "visible": "1"
+    },
+    {
+      "name": "Theta Three (Cleanups Manager)",
+      "id": "30",
+      "visible": "1"
+    },
+    {
+      "name": "Upsilon (Alumni Relations)",
+      "id": "1",
+      "visible": "1"
+    },
+    {
+      "name": "Phi (Philanthropy Chair)",
+      "id": "59",
+      "visible": "0"
+    },
+    {
+      "name": "Kappa (Volunteer Events Chair)",
+      "id": "74",
+      "visible": "1"
+    },
+    {
+      "name": "Psi (Social Chair)",
+      "id": "46",
+      "visible": "1"
+    },
+    {
+      "name": "Rho (Brotherhood Events Chair)",
+      "id": "22",
+      "visible": "1"
+    },
+    {
+      "name": "Assistant Tau (Assistant Treasurer)",
+      "id": "47",
+      "visible": "1"
+    },
+    {
+      "name": "Lambda (New Member Mentor)",
+      "id": "3",
+      "visible": "1"
+    },
+    {
+      "name": "Epsilon (Webmaster)",
+      "id": "45",
+      "visible": "1"
+    }
+  ],
+  "active": [
+    {
+      "id": "0",
+      "img": "000.jpg",
+      "name": "#### ####",
+      "lastname": "###",
+      "classOf": "AE ####",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "1",
+      "img": "Alexander Mitchell.jpg",
+      "name": "Alexander",
+      "lastname": "Mitchell",
+      "classOf": "AE 2017",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "2",
+      "img": "Kraig Van Wieringen.jpg",
+      "name": "Kraig Van",
+      "lastname": "Wieringen",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "3",
+      "img": "Robert Meyer.jpg",
+      "name": "Robert",
+      "lastname": "Meyer",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "4",
+      "img": "John Crouch.jpg",
+      "name": "John",
+      "lastname": "Crouch",
+      "classOf": "AE 2015",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "5",
+      "img": "Bradley Jones.jpg",
+      "name": "Bradley",
+      "lastname": "Jones",
+      "classOf": "AE 2017",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "6",
+      "img": "Jack OMalley.jpg",
+      "name": "Jack",
+      "lastname": "O'Malley",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "7",
+      "img": "Tanner Zielinski.jpg",
+      "name": "Tanner",
+      "lastname": "Zielinski",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "8",
+      "img": "Connor Gasper.jpg",
+      "name": "Connor",
+      "lastname": "Gasper",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "9",
+      "img": "Sergei Lemesh.jpg",
+      "name": "Sergei",
+      "lastname": "Lemesh",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "10",
+      "img": "Alexander Buffo.jpg",
+      "name": "Alexander",
+      "lastname": "Buffo",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "11",
+      "img": "Sanjin Ibrahimovic.jpg",
+      "name": "Sanjin",
+      "lastname": "Ibrahimovic",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "12",
+      "img": "Brandon Sit.jpg",
+      "name": "Brandon",
+      "lastname": "Sit",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "13",
+      "img": "Gianni Carvajal.jpg",
+      "name": "Gianni",
+      "lastname": "Carvajal",
+      "classOf": "AE 2019",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "14",
+      "img": "Marcello Gomes.jpg",
+      "name": "Marcello",
+      "lastname": "Gomes",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "0"
+    },
+    {
+      "id": "15",
+      "img": "Arthur Sommers.jpg",
+      "name": "Arthur",
+      "lastname": "Sommers",
+      "classOf": "AE 2017",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "16",
+      "img": "Alvah Bickner IX.jpg",
+      "name": "Alvah",
+      "lastname": "Bickner IX",
+      "classOf": "AE 2019",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "17",
+      "img": "Janek Wasag.jpg",
+      "name": "Janek",
+      "lastname": "Wasag",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "18",
+      "img": "Jeewon Ahn.jpg",
+      "name": "Jeewon",
+      "lastname": "Ahn",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "19",
+      "img": "Ryan Anderson.jpg",
+      "name": "Ryan",
+      "lastname": "Anderson",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "20",
+      "img": "Efthimios Atsaloglou.jpg",
+      "name": "Efthimios",
+      "lastname": "Atsaloglou",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "21",
+      "img": "Evan Austin.jpg",
+      "name": "Evan",
+      "lastname": "Austin",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "22",
+      "img": "Jeremy Becker.jpg",
+      "name": "Jeremy",
+      "lastname": "Becker",
+      "classOf": "AE 2018",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "23",
+      "img": "Marty Beebe.jpg",
+      "name": "Marty",
+      "lastname": "Beebe",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "24",
+      "img": "Dakota Betts.jpg",
+      "name": "Dakota",
+      "lastname": "Betts",
+      "classOf": "AE 2015",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "25",
+      "img": "David Costa.jpg",
+      "name": "David",
+      "lastname": "Costa",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "26",
+      "img": "Martin Dillon.jpg",
+      "name": "Martin",
+      "lastname": "Dillon",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "27",
+      "img": "Andrei Dumitru.jpg",
+      "name": "Andrei",
+      "lastname": "Dumitru",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "28",
+      "img": "Collin Dunn.jpg",
+      "name": "Collin",
+      "lastname": "Dunn",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "29",
+      "img": "Cedric Elam.jpg",
+      "name": "Cedric",
+      "lastname": "Elam",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "30",
+      "img": "Matthew Flavin.jpg",
+      "name": "Matthew",
+      "lastname": "Flavin",
+      "classOf": "AE 2019",
+      "isOfficer": "1",
+      "visible": "1"
+    },
+    {
+      "id": "31",
+      "img": "Dan-Stefan Florescu.jpg",
+      "name": "Dan-Stefan",
+      "lastname": "Florescu",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "32",
+      "img": "Jacob Fogarty.jpg",
+      "name": "Jacob",
+      "lastname": "Fogarty",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "33",
+      "img": "Isaac Gewarges.jpg",
+      "name": "Isaac",
+      "lastname": "Gewarges",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "34",
+      "img": "Thomas Gonnot.jpg",
+      "name": "Thomas",
+      "lastname": "Gonnot",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "35",
+      "img": "000.jpg",
+      "name": "##### #####",
+      "lastname": "###",
+      "classOf": "AE ####",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "36",
+      "img": "Benjamin Grimmer.jpg",
+      "name": "Benjamin",
+      "lastname": "Grimmer",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "37",
+      "img": "Andy Huang.jpg",
+      "name": "Andy",
+      "lastname": "Huang",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "38",
+      "img": "Teo Inke.jpg",
+      "name": "Teo",
+      "lastname": "Inke",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "39",
+      "img": "Alexander Jacobs.jpg",
+      "name": "Alexander",
+      "lastname": "Jacobs",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "40",
+      "img": "Benjamin Jensen.jpg",
+      "name": "Benjamin",
+      "lastname": "Jensen",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "41",
+      "img": "Lei Ling.jpg",
+      "name": "Lei",
+      "lastname": "Ling",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "42",
+      "img": "Peter Marciano II.jpg",
+      "name": "Peter",
+      "lastname": "Marciano II",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "43",
+      "img": "Timothy McCollam.jpg",
+      "name": "Timothy",
+      "lastname": "McCollam",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "44",
+      "img": "Liam Murphy.jpg",
+      "name": "Liam",
+      "lastname": "Murphy",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "45",
+      "img": "Jordan Mynes.jpg",
+      "name": "Jordan",
+      "lastname": "Mynes",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "46",
+      "img": "Alexander Nicoara.jpg",
+      "name": "Alexander",
+      "lastname": "Nicoara",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "47",
+      "img": "Daksh Patel.jpg",
+      "name": "Daksh",
+      "lastname": "Patel",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "48",
+      "img": "Mitchell Pollitt.jpg",
+      "name": "Mitchell",
+      "lastname": "Pollitt",
+      "classOf": "AE 2015",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "49",
+      "img": "Paolo Ratti Tamayo.jpg",
+      "name": "Paolo",
+      "lastname": "Ratti Tamayo",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "50",
+      "img": "Calin Segarceanu.jpg",
+      "name": "Calin",
+      "lastname": "Segarceanu",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "51",
+      "img": "Tyler Seppala.jpg",
+      "name": "Tyler",
+      "lastname": "Seppala",
+      "classOf": "AE 2015",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "52",
+      "img": "Richard Stevenson.jpg",
+      "name": "Richard",
+      "lastname": "Stevenson",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "53",
+      "img": "Adam Sumner.jpg",
+      "name": "Adam",
+      "lastname": "Sumner",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "54",
+      "img": "Kaushik Suryanarayanan.jpg",
+      "name": "Kaushik",
+      "lastname": "Suryanarayanan",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "55",
+      "img": "Grayson Watson.jpg",
+      "name": "Grayson",
+      "lastname": "Watson",
+      "classOf": "AE 2016",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "56",
+      "img": "Thomas Wolff.jpg",
+      "name": "Thomas",
+      "lastname": "Wolff",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "57",
+      "img": "Perry Zhang.jpg",
+      "name": "Perry",
+      "lastname": "Zhang",
+      "classOf": "AE 2017",
+      "isOfficer": "0",
+      "visible": "0"
+    },
+    {
+      "id": "58",
+      "img": "Chris Zurowski.jpg",
+      "name": "Chris",
+      "lastname": "Zurowski",
+      "classOf": "AE 2018",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+	{
+      "id": "59",
+      "img": "000.jpg",
+      "name": "Ewan",
+      "lastname": "Ellis",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "60",
+      "img": "000.jpg",
+      "name": "Tuan",
+      "lastname": "Tran",
+      "classOf": "AE 2019",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "61",
+      "img": "000.jpg",
+      "name": "Rukang (Wade)",
+      "lastname": "Zhao",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "62",
+      "img": "000.jpg",
+      "name": "Zhiwei (Leo)",
+      "lastname": "Zhang",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "63",
+      "img": "000.jpg",
+      "name": "Peiran (Barry)",
+      "lastname": "Zeng",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "64",
+      "img": "000.jpg",
+      "name": "Justin",
+      "lastname": "Tringl",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "65",
+      "img": "000.jpg",
+      "name": "Thomas",
+      "lastname": "Spillman",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "66",
+      "img": "000.jpg",
+      "name": "Matthew",
+      "lastname": "Sifuentes",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "67",
+      "img": "000.jpg",
+      "name": "Avery",
+      "lastname": "Martin",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "68",
+      "img": "000.jpg",
+      "name": "Shaam",
+      "lastname": "Merai",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "69",
+      "img": "000.jpg",
+      "name": "Alister",
+      "lastname": "McGrath",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "70",
+      "img": "000.jpg",
+      "name": "Josh",
+      "lastname": "Hauert",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "71",
+      "img": "000.jpg",
+      "name": "Haoran (David)",
+      "lastname": "Duan",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "72",
+      "img": "000.jpg",
+      "name": "Chris",
+      "lastname": "Dickson",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "73",
+      "img": "000.jpg",
+      "name": "Andrew",
+      "lastname": "Adams",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
+    },
+    {
+      "id": "74",
+      "img": "000.jpg",
+      "name": "Tyler",
+      "lastname": "Grudowski",
+      "classOf": "AE 2020",
+      "isOfficer": "1",
+      "visible": "1"
+    }
+  ],
+  "advisor": [
+    {
+      "id": 0,
+      "img": "000.jpg",
+      "name": "#### ####",
+      "title": "###### (AE ####)",
+      "visible": 0
+    },
+    {
+      "id": 1,
+      "img": "000.jpg",
+      "name": "Krishen Blows",
+      "title": "Resident Advisor (AE 2014)",
+      "visible": 1
+    },
+    {
+      "id": 2,
+      "img": "Leo Bassett.jpg",
+      "name": "Leo Bassett",
+      "title": "Chapter Advisor (AE 2009)",
+      "visible": 1
+    },
+    {
+      "id": 3,
+      "img": "Gary Doman.jpg",
+      "name": "Gary Doman",
+      "title": "Assistant Advisor",
+      "visible": 1
+    },
+    {
+      "id": 4,
+      "img": "Lucy.jpg",
+      "name": "Lucy",
+      "title": "House Dog",
+      "visible": 1
+    }
+  ]
+}
