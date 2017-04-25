@@ -773,6 +773,15 @@
       "classOf": "AE 2020",
       "isOfficer": "1",
       "visible": "1"
+    },
+    {
+      "id": "75",
+      "img": "000.jpg",
+      "name": "Ritwik",
+      "lastname": "Divakaruni",
+      "classOf": "AE 2020",
+      "isOfficer": "0",
+      "visible": "1"
     }
   ],
   "advisor": [
