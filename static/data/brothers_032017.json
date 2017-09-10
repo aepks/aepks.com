@@ -65,7 +65,7 @@
     {
       "name": "Phi (Philanthropy Chair)",
       "id": "59",
-      "visible": "0"
+      "visible": "1"
     },
     {
       "name": "Kappa (Volunteer Events Chair)",
@@ -115,7 +115,7 @@
       "lastname": "Mitchell",
       "classOf": "AE 2017",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "2",
@@ -142,7 +142,7 @@
       "lastname": "Crouch",
       "classOf": "AE 2015",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "5",
@@ -151,7 +151,7 @@
       "lastname": "Jones",
       "classOf": "AE 2017",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "6",
@@ -223,7 +223,7 @@
       "lastname": "Carvajal",
       "classOf": "AE 2019",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "14",
@@ -241,7 +241,7 @@
       "lastname": "Sommers",
       "classOf": "AE 2017",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "16",
@@ -268,7 +268,7 @@
       "lastname": "Ahn",
       "classOf": "AE 2018",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "19",
@@ -295,7 +295,7 @@
       "lastname": "Austin",
       "classOf": "AE 2016",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "22",
@@ -304,7 +304,7 @@
       "lastname": "Becker",
       "classOf": "AE 2018",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "23",
@@ -313,7 +313,7 @@
       "lastname": "Beebe",
       "classOf": "AE 2018",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "24",
@@ -403,7 +403,7 @@
       "lastname": "Gewarges",
       "classOf": "AE 2018",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "34",
@@ -795,8 +795,8 @@
     {
       "id": 1,
       "img": "000.jpg",
-      "name": "Krishen Blows",
-      "title": "Resident Advisor (AE 2014)",
+      "name": "Max Fugure",
+      "title": "Resident Advisor (AE 2013)",
       "visible": 1
     },
     {
@@ -818,7 +818,7 @@
       "img": "Lucy.jpg",
       "name": "Lucy",
       "title": "House Dog",
-      "visible": 1
+      "visible": 0
     }
   ]
 }
