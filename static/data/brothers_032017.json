@@ -65,7 +65,7 @@
     {
       "name": "Phi (Philanthropy Chair)",
       "id": "59",
-      "visible": "0"
+      "visible": "1"
     },
     {
       "name": "Kappa (Volunteer Events Chair)",
@@ -115,7 +115,7 @@
       "lastname": "Mitchell",
       "classOf": "AE 2017",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "2",
@@ -142,7 +142,7 @@
       "lastname": "Crouch",
       "classOf": "AE 2015",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "5",
@@ -151,7 +151,7 @@
       "lastname": "Jones",
       "classOf": "AE 2017",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "6",
@@ -223,7 +223,7 @@
       "lastname": "Carvajal",
       "classOf": "AE 2019",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "14",
@@ -241,7 +241,7 @@
       "lastname": "Sommers",
       "classOf": "AE 2017",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "16",
@@ -268,7 +268,7 @@
       "lastname": "Ahn",
       "classOf": "AE 2018",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "19",
@@ -295,7 +295,7 @@
       "lastname": "Austin",
       "classOf": "AE 2016",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "22",
@@ -304,7 +304,7 @@
       "lastname": "Becker",
       "classOf": "AE 2018",
       "isOfficer": "1",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "23",
@@ -313,7 +313,7 @@
       "lastname": "Beebe",
       "classOf": "AE 2018",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "24",
@@ -403,7 +403,7 @@
       "lastname": "Gewarges",
       "classOf": "AE 2018",
       "isOfficer": "0",
-      "visible": "1"
+      "visible": "0"
     },
     {
       "id": "34",
@@ -632,7 +632,7 @@
     },
 	{
       "id": "59",
-      "img": "000.jpg",
+      "img": "Ewan Ellis.jpg",
       "name": "Ewan",
       "lastname": "Ellis",
       "classOf": "AE 2019",
@@ -641,7 +641,7 @@
     },
     {
       "id": "60",
-      "img": "000.jpg",
+      "img": "Tuan Tran.jpg",
       "name": "Tuan",
       "lastname": "Tran",
       "classOf": "AE 2019",
@@ -650,7 +650,7 @@
     },
     {
       "id": "61",
-      "img": "000.jpg",
+      "img": "Rukang Zhao.jpg",
       "name": "Rukang (Wade)",
       "lastname": "Zhao",
       "classOf": "AE 2020",
@@ -659,7 +659,7 @@
     },
     {
       "id": "62",
-      "img": "000.jpg",
+      "img": "Zhiwei Zhang.jpg",
       "name": "Zhiwei (Leo)",
       "lastname": "Zhang",
       "classOf": "AE 2020",
@@ -668,7 +668,7 @@
     },
     {
       "id": "63",
-      "img": "000.jpg",
+      "img": "Barry Zeng.jpg",
       "name": "Peiran (Barry)",
       "lastname": "Zeng",
       "classOf": "AE 2020",
@@ -677,7 +677,7 @@
     },
     {
       "id": "64",
-      "img": "000.jpg",
+      "img": "Justin Tringl.jpg",
       "name": "Justin",
       "lastname": "Tringl",
       "classOf": "AE 2020",
@@ -686,7 +686,7 @@
     },
     {
       "id": "65",
-      "img": "000.jpg",
+      "img": "Thomas Spillman.jpg",
       "name": "Thomas",
       "lastname": "Spillman",
       "classOf": "AE 2020",
@@ -695,7 +695,7 @@
     },
     {
       "id": "66",
-      "img": "000.jpg",
+      "img": "Matthew Sifuentes.jpg",
       "name": "Matthew",
       "lastname": "Sifuentes",
       "classOf": "AE 2020",
@@ -704,7 +704,7 @@
     },
     {
       "id": "67",
-      "img": "000.jpg",
+      "img": "Avery Martin.jpg",
       "name": "Avery",
       "lastname": "Martin",
       "classOf": "AE 2020",
@@ -713,7 +713,7 @@
     },
     {
       "id": "68",
-      "img": "000.jpg",
+      "img": "Shaam Merai.jpg",
       "name": "Shaam",
       "lastname": "Merai",
       "classOf": "AE 2020",
@@ -722,7 +722,7 @@
     },
     {
       "id": "69",
-      "img": "000.jpg",
+      "img": "Alister McGrath.jpg",
       "name": "Alister",
       "lastname": "McGrath",
       "classOf": "AE 2020",
@@ -731,7 +731,7 @@
     },
     {
       "id": "70",
-      "img": "000.jpg",
+      "img": "Josh Hauert.jpg",
       "name": "Josh",
       "lastname": "Hauert",
       "classOf": "AE 2020",
@@ -740,7 +740,7 @@
     },
     {
       "id": "71",
-      "img": "000.jpg",
+      "img": "David Duan.jpg",
       "name": "Haoran (David)",
       "lastname": "Duan",
       "classOf": "AE 2020",
@@ -749,7 +749,7 @@
     },
     {
       "id": "72",
-      "img": "000.jpg",
+      "img": "Chris Dickson.jpg",
       "name": "Chris",
       "lastname": "Dickson",
       "classOf": "AE 2020",
@@ -758,7 +758,7 @@
     },
     {
       "id": "73",
-      "img": "000.jpg",
+      "img": "Andrew Adams.jpg",
       "name": "Andrew",
       "lastname": "Adams",
       "classOf": "AE 2020",
@@ -767,7 +767,7 @@
     },
     {
       "id": "74",
-      "img": "000.jpg",
+      "img": "Tyler Grudowski.jpg",
       "name": "Tyler",
       "lastname": "Grudowski",
       "classOf": "AE 2020",
@@ -776,7 +776,7 @@
     },
     {
       "id": "75",
-      "img": "000.jpg",
+      "img": "Ritwik Siddhartha Divakarani.jpg",
       "name": "Ritwik",
       "lastname": "Divakaruni",
       "classOf": "AE 2020",
@@ -795,8 +795,8 @@
     {
       "id": 1,
       "img": "000.jpg",
-      "name": "Krishen Blows",
-      "title": "Resident Advisor (AE 2014)",
+      "name": "Max Fugure",
+      "title": "Resident Advisor (AE 2013)",
       "visible": 1
     },
     {
@@ -818,7 +818,7 @@
       "img": "Lucy.jpg",
       "name": "Lucy",
       "title": "House Dog",
-      "visible": 1
+      "visible": 0
     }
   ]
 }
