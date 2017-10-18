@@ -47,36 +47,74 @@
                 makeActiveList(data);
                 makeAdvisorList(data);
             },
-            error: function() { // callback if there's an error
-                console.log ("error");
+            error: function(xhr, status) { // callback if there's an error
+                console.log ("error: " + status);
             }
         });     
     });
     
+    function makeAvatarUrl(active) {
+        return '../img/brothers/' + active.img;
+    }
+    
+    function makeAvatarName(active) {
+        if (typeof active.lastname === 'undefined') {
+            return active.name;
+        }
+        
+        return active.name + ' ' + active.lastname;
+    }
+    
+    function makeAvatar(active, subtitle) {
+        var html = [];
+        html.push(
+            '<div class="l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">',
+                '<div class="avatar" style="background-image: url(\'' + makeAvatarUrl(active) + '\')"></div>',
+                '<h3 class="content-head">' + makeAvatarName(active) + '</h3>',
+                '<p>' + subtitle + '</p>',
+            '</div>'
+        );
+        return html.join('');
+    }
+    
+    function makeAvatarSubtitledList(data, name, selector) {
+        var arr = data[name];
+        for (var i = 0; i < arr.length; i++) {
+            var avatar = arr[i];
+            if (avatar.visible == 0) continue;
+            
+            var id = avatar.id;
+            if (id <= 0 || id >= data.active.length) {
+                console.error('invalid id in ' + name + ': (id = ' + avatar.id + ', name = "' + avatar.name + '")');
+                return;
+            }
+            
+            var active = data.active[id];
+            var subtitle = avatar.name;
+            var html = makeAvatar(active, subtitle);
+            $(selector).append(html);
+        }
+    }
+    
+    function makeAvatarList(data, name, selector, subtitleCallback) {
+        var arr = data[name];
+        for (i = 0; i < arr.length; i++) {
+            var avatar = arr[i];
+            if (avatar.visible == 0) continue;
+            
+            var html = makeAvatar(avatar, subtitleCallback(avatar)); 
+            $(selector).append(html);
+        }
+    }
+    
     // Exec Board List
     function makeExecList(data) {
-        for (i = 0; i < data.exec.length; i++) {
-            var name = data.exec[i].name;
-            var id = (data.active.length > data.exec[i].id) ? data.exec[i].id : 0; // make sure it doesn't overflow
-            var visible = data.exec[i].visible;
-            
-            if (visible != 0 && id != 0) {
-                $("#exec").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + data.active[id].img + "'> <h3 class='content-head'>" + data.active[id].name + " " + data.active[id].lastname + "</h3> <p>" + name + "</p> </div>");
-            }
-        }
+        makeAvatarSubtitledList(data, 'exec', '#exec');
     }
     
     // Officer List
     function makeOfficerList(data) {
-        for (i = 0; i < data.officer.length; i++) {
-            var name = data.officer[i].name;
-            var id = (data.active.length > data.officer[i].id) ? data.officer[i].id : 0;
-            var visible = data.officer[i].visible;
-            
-            if (visible != 0 && id != 0) {
-                $("#officer").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + data.active[id].img + "'> <h3 class='content-head'>" + data.active[id].name + " " + data.active[id].lastname + "</h3> <p>" + name + "</p> </div>");
-            }
-        }
+        makeAvatarSubtitledList(data, 'officer', '#officer');
     }
     
     // Active List
@@ -89,35 +127,12 @@
             return a < b ? -1 : a > b ? 1 : 0;
         });
         
-        for (i = 0; i < data.active.length; i++) {
-            var img = data.active[i].img;
-            var name = data.active[i].name;
-            var lastname = data.active[i].lastname;
-            var classOf = data.active[i].classOf;
-            var isOfficer = data.active[i].isOfficer;
-            var visible = data.active[i].visible;
-            
-            // list all active brothers' name in console
-            console.log(name + " " + lastname);
-                    
-            if (visible != 0) {
-                $("#active").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + img + "'> <h3 class='content-head'>" + name + " " + lastname + "</h3> <p>" + classOf + "</p> </div>");
-            }
-        }
+        makeAvatarList(data, 'active', '#active', function(x) { return x.classOf; });
     }
     
     // Advisor List
     function makeAdvisorList(data) {
-        for (i = 0; i < data.advisor.length; i++) {
-            var img = data.advisor[i].img;
-            var name = data.advisor[i].name;
-            var title = data.advisor[i].title;
-            var visible = data.advisor[i].visible;
-                    
-            if (visible != 0) {
-                $("#advisor").append("<div class='l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4'> <img class='avatar' width='100' height='100' src='../img/brothers/" + img + "'> <h3 class='content-head'>" + name + "</h3> <p>" + title + "</p> </div>");
-            }
-        }
+        makeAvatarList(data, 'advisor', '#advisor', function(x) { return x.title; });
     }
 
 </script>
