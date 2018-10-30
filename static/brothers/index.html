@@ -6,10 +6,10 @@
     <meta name="description" content="Brothers page for Alpha Epsilon of Phi Kappa Sigma">
 
     <title>Brothers &ndash; Alpha Epsilon of Phi Kappa Sigma</title>
-    
+
     <!-- Import Pure components -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    
+
     <!--[if lte IE 8]>
 
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css" integrity="sha384-sGrAmFbC85ibuG+7mNPSCxr6U5S3ObASQDpRTlck+CBI4SRyHG9lIto9YyA92YG9" crossorigin="anonymous">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
 
     <!--<![endif]-->
-    
+
     <!-- Import other components -->
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
@@ -28,18 +28,18 @@
 
     <!-- Import css -->
     <link rel="stylesheet" href="../css/layouts/aepks.css">
-    
+
     <!-- Import JQuery -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js" integrity="sha384-XxcvoeNF5V0ZfksTnV+bejnCsJjOOIzN6UVwF85WBsAnU3zeYh5bloN+L4WLgeNE" crossorigin="anonymous"></script>
-    
+
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" integrity="sha384-9tt8DlZQhE63eBuKml9tnMclfDeo/8/wstzUrBQStZZkCCvwfw78IiV+r9o600g2" crossorigin="anonymous"></script>
 
 <!-- Reading JSON; Read list of brothers and other related information -->
 <script>
-    
+
     $(document).ready(function(){
         $.ajax({
-            url: "../data/brothers_102017.json", // path to file
+            url: "../data/brothers_F2018.json", // path to file
             dataType: 'json', // type of file (text, json, xml, etc)
             success: function(data) { // callback for successful completion
                 makeExecList(data);
@@ -50,21 +50,21 @@
             error: function(xhr, status) { // callback if there's an error
                 console.log ("error: " + status);
             }
-        });     
+        });
     });
-    
+
     function makeAvatarUrl(active) {
         return '../img/brothers/' + active.img;
     }
-    
+
     function makeAvatarName(active) {
         if (typeof active.lastname === 'undefined') {
             return active.name;
         }
-        
+
         return active.name + ' ' + active.lastname;
     }
-    
+
     function makeAvatar(active, subtitle) {
         var html = [];
         html.push(
@@ -76,47 +76,47 @@
         );
         return html.join('');
     }
-    
+
     function makeAvatarSubtitledList(data, name, selector) {
         var arr = data[name];
         for (var i = 0; i < arr.length; i++) {
             var avatar = arr[i];
             if (avatar.visible == 0) continue;
-            
+
             var id = avatar.id;
             if (id <= 0 || id >= data.active.length) {
                 console.error('invalid id in ' + name + ': (id = ' + avatar.id + ', name = "' + avatar.name + '")');
                 return;
             }
-            
+
             var active = data.active[id];
             var subtitle = avatar.name;
             var html = makeAvatar(active, subtitle);
             $(selector).append(html);
         }
     }
-    
+
     function makeAvatarList(data, name, selector, subtitleCallback) {
         var arr = data[name];
         for (i = 0; i < arr.length; i++) {
             var avatar = arr[i];
             if (avatar.visible == 0) continue;
-            
-            var html = makeAvatar(avatar, subtitleCallback(avatar)); 
+
+            var html = makeAvatar(avatar, subtitleCallback(avatar));
             $(selector).append(html);
         }
     }
-    
+
     // Exec Board List
     function makeExecList(data) {
         makeAvatarSubtitledList(data, 'exec', '#exec');
     }
-    
+
     // Officer List
     function makeOfficerList(data) {
         makeAvatarSubtitledList(data, 'officer', '#officer');
     }
-    
+
     // Active List
     function makeActiveList(data) {
         // Sort alphabetically by last name
@@ -126,10 +126,10 @@
 
             return a < b ? -1 : a > b ? 1 : 0;
         });
-        
+
         makeAvatarList(data, 'active', '#active', function(x) { return x.classOf; });
     }
-    
+
     // Advisor List
     function makeAdvisorList(data) {
         makeAvatarList(data, 'advisor', '#advisor', function(x) { return x.title; });
@@ -163,7 +163,7 @@
 
 <!-- Main Content -->
 <div class="content-wrapper">
-    
+
     <!-- Executive Board -->
     <div class="content">
         <h2 class="content-head is-center">Executive Board</h2>
@@ -171,7 +171,7 @@
             <!-- APPEND FROM SCRIPT -->
         </div>
     </div>
-    
+
     <!-- Officers -->
     <div class="content">
         <h2 class="content-head is-center">Officers</h2>
@@ -179,7 +179,7 @@
             <!-- APPEND FROM SCRIPT -->
         </div>
     </div>
-    
+
     <!-- Active -->
     <div class="content">
         <h2 class="content-head is-center">Active Members</h2>
@@ -187,7 +187,7 @@
             <!-- APPEND FROM SCRIPT -->
         </div>
     </div>
-    
+
     <!-- Advisor -->
     <div class="content">
         <h2 class="content-head is-center">Advisors</h2>
@@ -195,7 +195,7 @@
             <!-- APPEND FROM SCRIPT -->
         </div>
     </div>
-    
+
     <!-- Footer -->
     <div class="footer l-box is-center">
         © 2018 <a href="http://pks.org/" class="footer-link">Phi Kappa Sigma International Fraternity</a>, Inc. - All Rights Reserved.

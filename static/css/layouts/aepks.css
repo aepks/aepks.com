@@ -172,12 +172,12 @@ li {
 
 /* Brothers */
 .bg-3 {
-    background-image: url(../../img/brothers/brothers_05_web.jpg);
+    background-image: url(../../img/brothers/brothers_06.jpg);
 }
 
 /* Events */
 .bg-4 {
-    background-image: url(../../img/events/events_02_web.jpg);
+    background-image: url(../../img/events/events_smokerS18.jpg);
 }
 
 /* Contact */
@@ -340,7 +340,7 @@ li {
     margin-right: auto;
 }
 
-.l-box p { 
+.l-box p {
     margin-top: 0.25em;
     margin-bottom: 0em;
 }
@@ -405,7 +405,7 @@ li {
         margin-top: 58px;
         height: 422px;
     }
-    
+
     .content-wrapper {
         top: 480px;
     }
@@ -426,7 +426,7 @@ li {
     .l-box-lrg {
         border: none;
     }
-    
+
     .events {
         height: 600px;
     }
@@ -442,20 +442,20 @@ li {
     .splash-head {
         font-size: 300%;
     }
-    
+
     .splash-container {
         height: 662px;
     }
-    
+
     .splash {
         width: 80%;
         height: 400px;
     }
-    
+
     .content-wrapper {
         top: 720px;
     }
-    
+
     .events {
         height: 800px;
     }
