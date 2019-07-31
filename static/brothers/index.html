@@ -39,30 +39,57 @@
 
     $(document).ready(function(){
         $.ajax({
-            url: "../data/brothers_012019.json", // path to file
+            url: "../data/brothers_2019-07-29.json", // path to file
             dataType: 'json', // type of file (text, json, xml, etc)
             success: function(data) { // callback for successful completion
-                makeExecList(data);
-                makeOfficerList(data);
-                makeActiveList(data);
-                makeAdvisorList(data);
-            },
+                loadActives(data);
+                loadAdvisors(data);
+            }
+            ,
             error: function(xhr, status) { // callback if there's an error
                 console.log ("error: " + status);
             }
         });
     });
 
+    var exec = {
+        "Alpha": "Alpha (President)",
+        "Beta": "Beta (Vice President / Internal Operations)",
+        "Pi": "Pi (Membership Development Chair)",
+        "Iota": "Iota (New Member Educator)",
+        "Tau": "Tau (Treasurer)",
+        "Sigma": "Sigma (Secretary)",
+        "Chi": "Chi (Recruitment Chair)",
+    };
+
+    var officers = {
+        "Theta 1": "Theta One (Kitchen Manager)",
+        "Theta 2": "Theta Two (House Manager)",
+        "Theta 3": "Theta Three (Cleanups Manager)",
+        "Upsilon": "Upsilon (Alumni Relations)",
+        "Phi": "Phi (Philanthropy Chair)",
+        "Kappa": "Kappa (Volunteer Events Chair)",
+        "Psi": "Psi (Social Chair)",
+        "Rho": "Rho (Brotherhood Events Chair)",
+        "Ast. Tau": "Assistant Tau (Assistant Treasurer)",
+        "Lambda": "Lambda (New Member Mentor)",
+        "Epsilon": "Epsilon (Webmaster)",
+    };
+
+    var execOrder = ["Alpha","Beta","Pi","Iota","Tau","Sigma","Chi"];
+    var officerOrder = ["Theta","Theta","Theta","Upsilon","Phi","Kappa","Psi","Rho","Ast. Tau","Lambda","Epsilon"];
+
+
     function makeAvatarUrl(active) {
-        return '../img/brothers/' + active.img;
+        if (active.hasImg) {
+            return '../img/brothers/' + active.name + '.jpg';
+        } else {
+            return '../img/brothers/000.jpg'
+        }
     }
 
     function makeAvatarName(active) {
-        if (typeof active.lastname === 'undefined') {
-            return active.name;
-        }
-
-        return active.name + ' ' + active.lastname;
+        return active.name;
     }
 
     function makeAvatar(active, subtitle) {
@@ -77,62 +104,42 @@
         return html.join('');
     }
 
-    function makeAvatarSubtitledList(data, name, selector) {
-        var arr = data[name];
-        for (var i = 0; i < arr.length; i++) {
-            var avatar = arr[i];
-            if (avatar.visible == 0) continue;
-
-            var id = avatar.id;
-            if (id <= 0 || id >= data.active.length) {
-                console.error('invalid id in ' + name + ': (id = ' + avatar.id + ', name = "' + avatar.name + '")');
-                return;
-            }
-
-            var active = data.active[id];
-            var subtitle = avatar.name;
-            var html = makeAvatar(active, subtitle);
-            $(selector).append(html);
-        }
-    }
-
-    function makeAvatarList(data, name, selector, subtitleCallback) {
-        var arr = data[name];
-        for (i = 0; i < arr.length; i++) {
-            var avatar = arr[i];
-            if (avatar.visible == 0) continue;
-
-            var html = makeAvatar(avatar, subtitleCallback(avatar));
-            $(selector).append(html);
-        }
-    }
-
-    // Exec Board List
-    function makeExecList(data) {
-        makeAvatarSubtitledList(data, 'exec', '#exec');
-    }
-
-    // Officer List
-    function makeOfficerList(data) {
-        makeAvatarSubtitledList(data, 'officer', '#officer');
-    }
-
-    // Active List
-    function makeActiveList(data) {
-        // Sort alphabetically by last name
-        data.active.sort( function( a, b ) {
-            a = a.lastname.toLowerCase();
-            b = b.lastname.toLowerCase();
-
-            return a < b ? -1 : a > b ? 1 : 0;
+    function loadActives(data) {
+        data.actives.sort(function(a, b){
+            return a.lastname > b.lastname;
         });
+        for (i = 0; i < data.actives.length; i++) {
+            var active = data.actives[i];
+            if (!active.visible) continue;
 
-        makeAvatarList(data, 'active', '#active', function(x) { return x.classOf; });
+            $('#active').append(makeAvatar(active, active.classOf));
+
+            for (j = 0; j < active.positions.length; j++) {
+                var position = active.positions[j];
+
+                if (position in exec) {
+                    $(document.getElementById(position.replace(" ", "-"))).replaceWith(makeAvatar(active, exec[position]));
+                } else {
+                    $(document.getElementById(position.replace(" ", "-"))).replaceWith(makeAvatar(active, officers[position]));
+                }
+            }
+        }
     }
 
-    // Advisor List
-    function makeAdvisorList(data) {
-        makeAvatarList(data, 'advisor', '#advisor', function(x) { return x.title; });
+    function loadAdvisors(data) {
+        data.advisors.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        for (i = 0; i < data.advisors.length; i++) {
+            var advisor = data.advisors[i];
+            if (!advisor.visible) {
+                continue;
+            }
+            for (j = 0; j < advisor.positions.length; j++) {
+                var position = advisor.positions[j];
+                $('#advisor').append(makeAvatar(advisor, position + ' (' + advisor.classOf + ')'));
+            }
+        }
     }
 
 </script>
@@ -168,7 +175,7 @@
     <div class="content">
         <h2 class="content-head is-center">Executive Board</h2>
         <div id="exec">
-            <!-- APPEND FROM SCRIPT -->
+            <!-- REPLACE FROM SCRIPT --><div id="Alpha"></div><div id="Beta"></div><div id="Pi"></div><div id="Iota"></div><div id="Tau"></div><div id="Sigma"></div><div id="Chi"></div>
         </div>
     </div>
 
@@ -176,7 +183,7 @@
     <div class="content">
         <h2 class="content-head is-center">Officers</h2>
         <div id="officer">
-            <!-- APPEND FROM SCRIPT -->
+            <!-- REPLACE FROM SCRIPT --><div id="Theta-1"></div><div id="Theta-2"></div><div id="Theta-3"></div><div id="Upsilon"></div><div id="Phi"></div><div id="Kappa"></div><div id="Psi"></div><div id="Rho"></div><div id="Ast.-Tau"></div><div id="Lambda"></div><div id="Epsilon"></div>
         </div>
     </div>
 
