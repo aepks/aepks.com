@@ -49,9 +49,9 @@
   {"lastname": "Sifuentes", "name": "Matthew Sifuentes", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true}
 ],
 "advisors": [
-  {"lastname": "Batliner", "name": "Brendan Batliner", "positions": ["Resident Advisor"], "classOf": "2021", "visible": true, "hasImg": true},
-  {"lastname": "Zurowski", "name": "Peter Zurowski", "positions": ["Housing Corp. Pres."], "classOf": "2014", "visible": true, "hasImg": true},
-  {"lastname": "Bassett", "name": "Leo Bassett", "positions": ["Chapter Advisor"], "classOf": "2009", "visible": true, "hasImg": true},
-  {"lastname": "Doman", "name": "Gary Doman", "positions": ["Assistant Chapter Advisor"], "classOf": "1986", "visible": true, "hasImg": true}
+  {"lastname": "Batliner", "name": "Brendan Batliner", "positions": ["Resident Advisor"], "classOf": "AE 2021", "visible": true, "hasImg": true},
+  {"lastname": "Zurowski", "name": "Peter Zurowski", "positions": ["Housing Corp. Pres."], "classOf": "AE 2014", "visible": false, "hasImg": false},
+  {"lastname": "Bassett", "name": "Leo Bassett", "positions": ["Chapter Advisor"], "classOf": "AE 2009", "visible": true, "hasImg": true},
+  {"lastname": "Doman", "name": "Gary Doman", "positions": ["Assistant Chapter Advisor"], "classOf": "AE 1986", "visible": true, "hasImg": true}
 ]
 }
