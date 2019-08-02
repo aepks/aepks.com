@@ -36,104 +36,97 @@
 
 <!-- Reading JSON; Read list of brothers and other related information -->
 <script>
+    "use strict";
 
-    $(document).ready(function(){
+    let exec = {
+        "Alpha": "Alpha (President)",
+        "Beta": "Beta (Vice President / Internal Operations)",
+        "Pi": "Pi (Membership Development Chair)",
+        "Iota": "Iota (New Member Educator)",
+        "Tau": "Tau (Treasurer)",
+        "Sigma": "Sigma (Secretary)",
+        "Chi": "Chi (Recruitment Chair)"
+    };
+
+    let officers = {
+        "Theta 1": "Theta One (Kitchen Manager)",
+        "Theta 2": "Theta Two (House Manager)",
+        "Theta 3": "Theta Three (Cleanups Manager)",
+        "Upsilon": "Upsilon (Alumni Relations)",
+        "Phi": "Phi (Philanthropy Chair)",
+        "Kappa": "Kappa (Volunteer Events Chair)",
+        "Psi": "Psi (Social Chair)",
+        "Rho": "Rho (Brotherhood Events Chair)",
+        "Ast. Tau": "Assistant Tau (Assistant Treasurer)",
+        "Lambda": "Lambda (New Member Mentor)",
+        "Epsilon": "Epsilon (Webmaster)"
+    };
+
+
+    function makeAvatarUrl(active) {
+        if (active.hasImg) {
+            return `../img/brothers/${active.name}.jpg`;
+        } else {
+            return "../img/brothers/000.jpg";
+        }
+    }
+
+    function makeAvatar(active, subtitle) {
+        return `<div class="l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">
+                  <div class="avatar" style="background-image: url('${makeAvatarUrl(active)}')"></div>
+                  <h3 class="content-head">${active.name}</h3>
+                  <p>${subtitle}</p>
+               </div>`;
+    }
+
+    function loadActives(data) {
+        data.actives.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        data.actives.forEach(function(active) {
+            if (!active.visible) { return; }
+
+            $("#active").append(makeAvatar(active, active.classOf));
+            active.positions.forEach(function(position) {
+                let positionId = position.replace(" ", "-"); // id tag in HTML
+                if (position in exec) {
+                    $(document.getElementById(positionId)).replaceWith(
+                        makeAvatar(active, exec[position]));
+                } else {
+                    $(document.getElementById(positionId)).replaceWith(
+                        makeAvatar(active, officers[position]));
+                }
+            });
+        });
+    }
+
+    function loadAdvisors(data) {
+        data.advisors.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        data.advisors.forEach(function(advisor) {
+            if (!advisor.visible) { return; }
+            advisor.positions.forEach(function(position) {
+                $("#advisor").append(
+                    makeAvatar(advisor, `${position} (${advisor.classOf})`));
+            });
+        });
+    }
+
+    $(document).ready(function() {
         $.ajax({
-            url: "../data/brothers_012019.json", // path to file
-            dataType: 'json', // type of file (text, json, xml, etc)
+            url: "../data/brothers_2019-07-29.json", // path to file
+            dataType: "json", // type of file (text, json, xml, etc)
             success: function(data) { // callback for successful completion
-                makeExecList(data);
-                makeOfficerList(data);
-                makeActiveList(data);
-                makeAdvisorList(data);
-            },
+                loadActives(data);
+                loadAdvisors(data);
+            }
+            ,
             error: function(xhr, status) { // callback if there's an error
                 console.log ("error: " + status);
             }
         });
     });
-
-    function makeAvatarUrl(active) {
-        return '../img/brothers/' + active.img;
-    }
-
-    function makeAvatarName(active) {
-        if (typeof active.lastname === 'undefined') {
-            return active.name;
-        }
-
-        return active.name + ' ' + active.lastname;
-    }
-
-    function makeAvatar(active, subtitle) {
-        var html = [];
-        html.push(
-            '<div class="l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">',
-                '<div class="avatar" style="background-image: url(\'' + makeAvatarUrl(active) + '\')"></div>',
-                '<h3 class="content-head">' + makeAvatarName(active) + '</h3>',
-                '<p>' + subtitle + '</p>',
-            '</div>'
-        );
-        return html.join('');
-    }
-
-    function makeAvatarSubtitledList(data, name, selector) {
-        var arr = data[name];
-        for (var i = 0; i < arr.length; i++) {
-            var avatar = arr[i];
-            if (avatar.visible == 0) continue;
-
-            var id = avatar.id;
-            if (id <= 0 || id >= data.active.length) {
-                console.error('invalid id in ' + name + ': (id = ' + avatar.id + ', name = "' + avatar.name + '")');
-                return;
-            }
-
-            var active = data.active[id];
-            var subtitle = avatar.name;
-            var html = makeAvatar(active, subtitle);
-            $(selector).append(html);
-        }
-    }
-
-    function makeAvatarList(data, name, selector, subtitleCallback) {
-        var arr = data[name];
-        for (i = 0; i < arr.length; i++) {
-            var avatar = arr[i];
-            if (avatar.visible == 0) continue;
-
-            var html = makeAvatar(avatar, subtitleCallback(avatar));
-            $(selector).append(html);
-        }
-    }
-
-    // Exec Board List
-    function makeExecList(data) {
-        makeAvatarSubtitledList(data, 'exec', '#exec');
-    }
-
-    // Officer List
-    function makeOfficerList(data) {
-        makeAvatarSubtitledList(data, 'officer', '#officer');
-    }
-
-    // Active List
-    function makeActiveList(data) {
-        // Sort alphabetically by last name
-        data.active.sort( function( a, b ) {
-            a = a.lastname.toLowerCase();
-            b = b.lastname.toLowerCase();
-
-            return a < b ? -1 : a > b ? 1 : 0;
-        });
-
-        makeAvatarList(data, 'active', '#active', function(x) { return x.classOf; });
-    }
-
-    // Advisor List
-    function makeAdvisorList(data) {
-        makeAvatarList(data, 'advisor', '#advisor', function(x) { return x.title; });
-    }
 
 </script>
 
@@ -168,7 +161,7 @@
     <div class="content">
         <h2 class="content-head is-center">Executive Board</h2>
         <div id="exec">
-            <!-- APPEND FROM SCRIPT -->
+            <!-- REPLACE FROM SCRIPT --><div id="Alpha"></div><div id="Beta"></div><div id="Pi"></div><div id="Iota"></div><div id="Tau"></div><div id="Sigma"></div><div id="Chi"></div>
         </div>
     </div>
 
@@ -176,7 +169,7 @@
     <div class="content">
         <h2 class="content-head is-center">Officers</h2>
         <div id="officer">
-            <!-- APPEND FROM SCRIPT -->
+            <!-- REPLACE FROM SCRIPT --><div id="Theta-1"></div><div id="Theta-2"></div><div id="Theta-3"></div><div id="Upsilon"></div><div id="Phi"></div><div id="Kappa"></div><div id="Psi"></div><div id="Rho"></div><div id="Ast.-Tau"></div><div id="Lambda"></div><div id="Epsilon"></div>
         </div>
     </div>
 
