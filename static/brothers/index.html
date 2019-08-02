@@ -36,34 +36,19 @@
 
 <!-- Reading JSON; Read list of brothers and other related information -->
 <script>
-    'use strict';
+    "use strict";
 
-    $(document).ready(function(){
-        $.ajax({
-            url: "../data/brothers_2019-07-29.json", // path to file
-            dataType: 'json', // type of file (text, json, xml, etc)
-            success: function(data) { // callback for successful completion
-                loadActives(data);
-                loadAdvisors(data);
-            }
-            ,
-            error: function(xhr, status) { // callback if there's an error
-                console.log ("error: " + status);
-            }
-        });
-    });
-
-    var exec = {
+    let exec = {
         "Alpha": "Alpha (President)",
         "Beta": "Beta (Vice President / Internal Operations)",
         "Pi": "Pi (Membership Development Chair)",
         "Iota": "Iota (New Member Educator)",
         "Tau": "Tau (Treasurer)",
         "Sigma": "Sigma (Secretary)",
-        "Chi": "Chi (Recruitment Chair)",
+        "Chi": "Chi (Recruitment Chair)"
     };
 
-    var officers = {
+    let officers = {
         "Theta 1": "Theta One (Kitchen Manager)",
         "Theta 2": "Theta Two (House Manager)",
         "Theta 3": "Theta Three (Cleanups Manager)",
@@ -74,45 +59,20 @@
         "Rho": "Rho (Brotherhood Events Chair)",
         "Ast. Tau": "Assistant Tau (Assistant Treasurer)",
         "Lambda": "Lambda (New Member Mentor)",
-        "Epsilon": "Epsilon (Webmaster)",
+        "Epsilon": "Epsilon (Webmaster)"
     };
 
-    function loadActives(data) {
-        data.actives.sort(function(a, b){
-            return a.lastname > b.lastname;
-        });
-        for (let i = 0; i < data.actives.length; i++) {
-            let active = data.actives[i];
-            if (!active.visible) continue;
 
-            $('#active').append(makeAvatar(active, active.classOf));
-
-            for (let j = 0; j < active.positions.length; j++) {
-                let position = active.positions[j];
-                let positionId = position.replace(" ", "-"); // id tag in HTML
-
-                if (position in exec) {
-                    $(document.getElementById(positionId)).replaceWith(makeAvatar(active, exec[position]));
-                } else {
-                    $(document.getElementById(positionId)).replaceWith(makeAvatar(active, officers[position]));
-                }
-            }
+    function makeAvatarUrl(active) {
+        if (active.hasImg) {
+            return '../img/brothers/' + active.name + '.jpg';
+        } else {
+            return '../img/brothers/000.jpg';
         }
     }
 
-    function loadAdvisors(data) {
-        data.advisors.sort(function(a, b){
-            return a.lastname > b.lastname;
-        });
-        for (let i = 0; i < data.advisors.length; i++) {
-            let advisor = data.advisors[i];
-            if (!advisor.visible) continue;
-
-            for (let j = 0; j < advisor.positions.length; j++) {
-                let position = advisor.positions[j];
-                $('#advisor').append(makeAvatar(advisor, position + ' (' + advisor.classOf + ')'));
-            }
-        }
+    function makeAvatarName(active) {
+        return active.name;
     }
 
     function makeAvatar(active, subtitle) {
@@ -127,17 +87,54 @@
         return html.join('');
     }
 
-    function makeAvatarUrl(active) {
-        if (active.hasImg) {
-            return '../img/brothers/' + active.name + '.jpg';
-        } else {
-            return '../img/brothers/000.jpg'
-        }
+    function loadActives(data) {
+        data.actives.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        data.actives.forEach(function(active) {
+            if (!active.visible) { return; }
+
+            $("#active").append(makeAvatar(active, active.classOf));
+            active.positions.forEach(function(position) {
+                let positionId = position.replace(" ", "-"); // id tag in HTML
+                if (position in exec) {
+                    $(document.getElementById(positionId)).replaceWith(
+                        makeAvatar(active, exec[position]));
+                } else {
+                    $(document.getElementById(positionId)).replaceWith(
+                        makeAvatar(active, officers[position]));
+                }
+            });
+        });
     }
 
-    function makeAvatarName(active) {
-        return active.name;
+    function loadAdvisors(data) {
+        data.advisors.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        data.advisors.forEach(function(advisor) {
+            if (!advisor.visible) { return; }
+            advisor.positions.forEach(function(position) {
+                $("#advisor").append(
+                    makeAvatar(advisor, position + " (" + advisor.classOf + ")"));
+            });
+        });
     }
+
+    $(document).ready(function() {
+        $.ajax({
+            url: "../data/brothers_2019-07-29.json", // path to file
+            dataType: "json", // type of file (text, json, xml, etc)
+            success: function(data) { // callback for successful completion
+                loadActives(data);
+                loadAdvisors(data);
+            }
+            ,
+            error: function(xhr, status) { // callback if there's an error
+                console.log ("error: " + status);
+            }
+        });
+    });
 
 </script>
 
