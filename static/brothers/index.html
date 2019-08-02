@@ -79,17 +79,42 @@
     var execOrder = ["Alpha","Beta","Pi","Iota","Tau","Sigma","Chi"];
     var officerOrder = ["Theta","Theta","Theta","Upsilon","Phi","Kappa","Psi","Rho","Ast. Tau","Lambda","Epsilon"];
 
+    function loadActives(data) {
+        data.actives.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        for (i = 0; i < data.actives.length; i++) {
+            var active = data.actives[i];
+            if (!active.visible) continue;
 
-    function makeAvatarUrl(active) {
-        if (active.hasImg) {
-            return '../img/brothers/' + active.name + '.jpg';
-        } else {
-            return '../img/brothers/000.jpg'
+            $('#active').append(makeAvatar(active, active.classOf));
+
+            for (j = 0; j < active.positions.length; j++) {
+                var position = active.positions[j];
+                var positionId = position.replace(" ", "-"); // id tag in HTML
+
+                if (position in exec) {
+                    $(document.getElementById(positionId)).replaceWith(makeAvatar(active, exec[position]));
+                } else {
+                    $(document.getElementById(positionId)).replaceWith(makeAvatar(active, officers[position]));
+                }
+            }
         }
     }
 
-    function makeAvatarName(active) {
-        return active.name;
+    function loadAdvisors(data) {
+        data.advisors.sort(function(a, b){
+            return a.lastname > b.lastname;
+        });
+        for (i = 0; i < data.advisors.length; i++) {
+            var advisor = data.advisors[i];
+            if (!advisor.visible) continue;
+
+            for (j = 0; j < advisor.positions.length; j++) {
+                var position = advisor.positions[j];
+                $('#advisor').append(makeAvatar(advisor, position + ' (' + advisor.classOf + ')'));
+            }
+        }
     }
 
     function makeAvatar(active, subtitle) {
@@ -104,42 +129,16 @@
         return html.join('');
     }
 
-    function loadActives(data) {
-        data.actives.sort(function(a, b){
-            return a.lastname > b.lastname;
-        });
-        for (i = 0; i < data.actives.length; i++) {
-            var active = data.actives[i];
-            if (!active.visible) continue;
-
-            $('#active').append(makeAvatar(active, active.classOf));
-
-            for (j = 0; j < active.positions.length; j++) {
-                var position = active.positions[j];
-
-                if (position in exec) {
-                    $(document.getElementById(position.replace(" ", "-"))).replaceWith(makeAvatar(active, exec[position]));
-                } else {
-                    $(document.getElementById(position.replace(" ", "-"))).replaceWith(makeAvatar(active, officers[position]));
-                }
-            }
+    function makeAvatarUrl(active) {
+        if (active.hasImg) {
+            return '../img/brothers/' + active.name + '.jpg';
+        } else {
+            return '../img/brothers/000.jpg'
         }
     }
 
-    function loadAdvisors(data) {
-        data.advisors.sort(function(a, b){
-            return a.lastname > b.lastname;
-        });
-        for (i = 0; i < data.advisors.length; i++) {
-            var advisor = data.advisors[i];
-            if (!advisor.visible) {
-                continue;
-            }
-            for (j = 0; j < advisor.positions.length; j++) {
-                var position = advisor.positions[j];
-                $('#advisor').append(makeAvatar(advisor, position + ' (' + advisor.classOf + ')'));
-            }
-        }
+    function makeAvatarName(active) {
+        return active.name;
     }
 
 </script>
