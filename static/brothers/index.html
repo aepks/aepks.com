@@ -36,6 +36,7 @@
 
 <!-- Reading JSON; Read list of brothers and other related information -->
 <script>
+    'use strict';
 
     $(document).ready(function(){
         $.ajax({
@@ -80,15 +81,15 @@
         data.actives.sort(function(a, b){
             return a.lastname > b.lastname;
         });
-        for (i = 0; i < data.actives.length; i++) {
-            var active = data.actives[i];
+        for (let i = 0; i < data.actives.length; i++) {
+            let active = data.actives[i];
             if (!active.visible) continue;
 
             $('#active').append(makeAvatar(active, active.classOf));
 
-            for (j = 0; j < active.positions.length; j++) {
-                var position = active.positions[j];
-                var positionId = position.replace(" ", "-"); // id tag in HTML
+            for (let j = 0; j < active.positions.length; j++) {
+                let position = active.positions[j];
+                let positionId = position.replace(" ", "-"); // id tag in HTML
 
                 if (position in exec) {
                     $(document.getElementById(positionId)).replaceWith(makeAvatar(active, exec[position]));
@@ -103,19 +104,19 @@
         data.advisors.sort(function(a, b){
             return a.lastname > b.lastname;
         });
-        for (i = 0; i < data.advisors.length; i++) {
-            var advisor = data.advisors[i];
+        for (let i = 0; i < data.advisors.length; i++) {
+            let advisor = data.advisors[i];
             if (!advisor.visible) continue;
 
-            for (j = 0; j < advisor.positions.length; j++) {
-                var position = advisor.positions[j];
+            for (let j = 0; j < advisor.positions.length; j++) {
+                let position = advisor.positions[j];
                 $('#advisor').append(makeAvatar(advisor, position + ' (' + advisor.classOf + ')'));
             }
         }
     }
 
     function makeAvatar(active, subtitle) {
-        var html = [];
+        let html = [];
         html.push(
             '<div class="l-box is-center pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">',
                 '<div class="avatar" style="background-image: url(\'' + makeAvatarUrl(active) + '\')"></div>',
