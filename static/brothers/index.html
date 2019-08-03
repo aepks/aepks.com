@@ -38,17 +38,14 @@
 <script>
     "use strict";
 
-    let exec = {
+    let officers = {
         "Alpha": "Alpha (President)",
         "Beta": "Beta (Vice President / Internal Operations)",
         "Pi": "Pi (Membership Development Chair)",
         "Iota": "Iota (New Member Educator)",
         "Tau": "Tau (Treasurer)",
         "Sigma": "Sigma (Secretary)",
-        "Chi": "Chi (Recruitment Chair)"
-    };
-
-    let officers = {
+        "Chi": "Chi (Recruitment Chair)",
         "Theta 1": "Theta One (Kitchen Manager)",
         "Theta 2": "Theta Two (House Manager)",
         "Theta 3": "Theta Three (Cleanups Manager)",
@@ -88,14 +85,9 @@
 
             $("#active").append(makeAvatar(active, active.classOf));
             active.positions.forEach(function(position) {
-                let positionId = position.replace(" ", "-"); // id tag in HTML
-                if (position in exec) {
-                    $(document.getElementById(positionId)).replaceWith(
-                        makeAvatar(active, exec[position]));
-                } else {
-                    $(document.getElementById(positionId)).replaceWith(
-                        makeAvatar(active, officers[position]));
-                }
+                let positionId = position.replace(" ", "-"); // id="" HTML tag
+                $(document.getElementById(positionId)).replaceWith(
+                    makeAvatar(active, officers[position]));
             });
         });
     }
