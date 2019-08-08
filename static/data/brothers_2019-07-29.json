@@ -19,7 +19,7 @@
   {"lastname": "Negron", "name": "Hunter Negron", "positions": ["Ast. Tau"], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Ngo", "name": "Huy Ngo", "positions": ["Theta 3"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Nguyen", "name": "Peter Nguyen", "positions": ["Theta 2"], "classOf": "AE 2022", "visible": true, "hasImg": false},
-  {"lastname": "Nogueira", "name": "Mario Nogueira", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
+  {"lastname": "Nogueira", "name": "Mario Nogueira", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Patel", "name": "Daksh Patel", "positions": [], "classOf": "AE 2019", "visible": true, "hasImg": true},
   {"lastname": "Pinto", "name": "Alexander Pinto", "positions": ["Upsilon"], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Pio", "name": "Jack Pio", "positions": ["Alpha"], "classOf": "AE 2021", "visible": true, "hasImg": true},
