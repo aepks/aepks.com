@@ -36,7 +36,7 @@
   {"lastname": "Wagler", "name": "Jared Wagler", "positions": ["Tau"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Willertez", "name": "Alexander Willertez", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Zhang", "name": "Zhiwei Zhang", "positions": ["Theta 1"], "classOf": "AE 2020", "visible": true, "hasImg": true},
-  {"lastname": "Adams", "name": "Andrew Adams", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
+  {"lastname": "Adams", "name": "Andrew Adams", "positions": [], "classOf": "AE 2020", "visible": false, "hasImg": true},
   {"lastname": "Demitrius", "name": "Steven Demitrius", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Dickson", "name": "Christopher Dickson", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Jensen", "name": "Benjamin Jensen", "positions": [], "classOf": "AE 2019", "visible": true, "hasImg": true},
