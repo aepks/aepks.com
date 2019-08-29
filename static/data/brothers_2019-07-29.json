@@ -44,7 +44,6 @@
   {"lastname": "Martin", "name": "Avery Martin", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "McGrath", "name": "Alister McGrath", "positions": ["Beta"], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Meyer", "name": "Joel Meyer", "positions": ["Iota"], "classOf": "AE 2021", "visible": true, "hasImg": true},
-  {"lastname": "Tran", "name": "Tuan Tran", "positions": [], "classOf": "AE 2019", "visible": true, "hasImg": true},
   {"lastname": "Tringl", "name": "Justin Tringl", "positions": ["Lambda"], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Sifuentes", "name": "Matthew Sifuentes", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true}
 ],
