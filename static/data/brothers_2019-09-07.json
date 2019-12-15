@@ -43,28 +43,26 @@
   {"lastname": "McGrath", "name": "Alister McGrath", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Meyer", "name": "Joel Meyer", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Tringl", "name": "Justin Tringl", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
-  {"lastname": "Sifuentes", "name": "Matthew Sifuentes", "positions": ["Theta-3"], "classOf": "AE 2020", "visible": true, "hasImg": true}
-],
-{"lastname": "Abott", "name": "Nathan Abott", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Barba", "name": "Francisco Barba", "positions": ["Theta-2"], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Beck", "name": "George Beck", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Bergstedt", "name": "Derek Bergstedt", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Blaise", "name": "Remi Blaise", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Collet", "name": "Alan Collet", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Dejesus", "name": "Aryan Dejesus", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Graney", "name": "Sean Graney", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Gutierrez", "name": "Rey Gutierrez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Hawn", "name": "Ethan Hawn", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Ishmam", "name": "Alif Ishmam", "positions": ["Epsilon"], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Kanofsky", "name": "Cameron Kanofsky", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Littlefield", "name": "Mark Littlefield", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Martin", "name": "Skyler Martin", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Picton", "name": "Zack Picton", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Pion", "name": "Jason Pion", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
-{"lastname": "Walsh", "name": "Brandon Walsh", "positions": ["Assistant Tau"], "classOf": "AE 2023", "visible": true, "hasImg": false},
-
-
-
+  {"lastname": "Sifuentes", "name": "Matthew Sifuentes", "positions": ["Theta-3"], "classOf": "AE 2020", "visible": true, "hasImg": true},
+  {"lastname": "Abott", "name": "Nathan Abott", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Barba", "name": "Francisco Barba", "positions": ["Theta-2"], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Beck", "name": "George Beck", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Bergstedt", "name": "Derek Bergstedt", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Blaise", "name": "Remi Blaise", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Collet", "name": "Alan Collet", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Dejesus", "name": "Aryan Dejesus", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Graney", "name": "Sean Graney", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Gutierrez", "name": "Rey Gutierrez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Hawn", "name": "Ethan Hawn", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Ishmam", "name": "Alif Ishmam", "positions": ["Epsilon"], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Kanofsky", "name": "Cameron Kanofsky", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Littlefield", "name": "Mark Littlefield", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Picton", "name": "Zack Picton", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Pion", "name": "Jason Pion", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Walsh", "name": "Brandon Walsh", "positions": ["Ast. Tau"], "classOf": "AE 2023", "visible": true, "hasImg": false},
+]
+}
+{
 "advisors": [
   {"lastname": "Batliner", "name": "Brendan Batliner", "positions": ["Resident Advisor"], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Zurowski", "name": "Peter Zurowski", "positions": ["Housing Corp. Pres."], "classOf": "AE 2014", "visible": false, "hasImg": false},
