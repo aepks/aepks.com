@@ -61,7 +61,8 @@
   {"lastname": "Pion", "name": "Jason Pion", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Walsh", "name": "Brandon Walsh", "positions": ["Ast. Tau"], "classOf": "AE 2023", "visible": true, "hasImg": false},
 ]
-
+}
+{
 "advisors": [
   {"lastname": "Batliner", "name": "Brendan Batliner", "positions": ["Resident Advisor"], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Zurowski", "name": "Peter Zurowski", "positions": ["Housing Corp. Pres."], "classOf": "AE 2014", "visible": false, "hasImg": false},
