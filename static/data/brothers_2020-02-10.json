@@ -1,9 +1,9 @@
 {
 "actives": [
-  {"lastname": "Abott", "name": "Nathan Abott", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Perez", "name": "Nathan Perez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Adams", "name": "Andrew Adams", "positions": [], "classOf": "AE 2020", "visible": false, "hasImg": true},
   {"lastname": "Amundson", "name": "Connor Amundson", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "Barba", "name": "Francisco Barba", "positions": ["Theta 2"], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Barba Cuellar", "name": "Francisco Barba Cuellar", "positions": ["Theta 2"], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Beck", "name": "George Beck", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Bergstedt", "name": "Derek Bergstedt", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Blaise", "name": "Remi Blaise", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
@@ -30,9 +30,7 @@
   {"lastname": "Littlefield", "name": "Mark Littlefield", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Loster", "name": "William Loster", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Martin", "name": "Avery Martin", "positions": ["Lambda"], "classOf": "AE 2020", "visible": true, "hasImg": true},
-  {"lastname": "McGrath", "name": "Alister McGrath", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "McMahon", "name": "Jake McMahon", "positions": ["Chi"], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "McQuillan", "name": "Sean McQuillan", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Meyer", "name": "Joel Meyer", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Murphy", "name": "Christopher Murphy", "positions": ["Kappa"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Mutnansky", "name": "Fredrick Mutnansky", "positions": ["Psi"], "classOf": "AE 2021", "visible": true, "hasImg": true},
@@ -54,12 +52,11 @@
   {"lastname": "Song", "name": "Noah Song", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Spillman", "name": "Thomas Spillman", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Suryanarayanan", "name": "Kaushik Suryanarayanan", "positions": ["Upsilon"], "classOf": "AE 2019", "visible": true, "hasImg": true},
-  {"lastname": "Tringl", "name": "Justin Tringl", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Villasenor", "name": "Roberto Villasenor", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Wagler", "name": "Jared Wagler", "positions": ["Tau"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Walsh", "name": "Brandon Walsh", "positions": ["Ast. Tau"], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Willertez", "name": "Alexander Willertez", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "Zhang", "name": "Zhiwei Zhang", "positions": [""], "classOf": "AE 2020", "visible": true, "hasImg": true}
+  {"lastname": "Zhang", "name": "Zhiwei (Leo) Zhang", "positions": [""], "classOf": "AE 2020", "visible": true, "hasImg": true}
 ],
 "advisors": [
   {"lastname": "Batliner", "name": "Brendan Batliner", "positions": ["Resident Advisor"], "classOf": "AE 2021", "visible": true, "hasImg": true},
