@@ -98,6 +98,11 @@ li {
 .home-menu {
     background: #333;
 }
+.discord-menu {
+    background: #2d3e50;
+    height: 4em;
+    text-align: center;
+}
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
@@ -110,7 +115,10 @@ li {
     font-weight: 400;
     font-size: 120%;
 }
-
+.discord-menu .pure-discord-heading {
+    color: #CFB53B;
+    padding-top: 1em;
+}
 .home-menu .pure-menu-selected a {
     color: #FFF;
 }
