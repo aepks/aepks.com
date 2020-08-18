@@ -389,6 +389,10 @@ li {
     font-style: italic;
 }
 
+.recruitment-link {
+    color: #CFB53B;
+}
+
 .footer-link {
     color: #CFB53B;
     text-decoration: none;
