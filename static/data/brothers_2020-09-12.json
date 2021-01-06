@@ -1,6 +1,5 @@
 {
 "actives": [
-  {"lastname": "Amundson", "name": "Connor Amundson", "positions": [], "classOf": "AE 2022", "visible": false, "hasImg": true},
   {"lastname": "Barba", "name": "Francisco Barba", "positions": ["Theta 2" , "Ast. Tau"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Beck", "name": "George Beck", "positions": ["Iota"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Bergstedt", "name": "Derek Bergstedt", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
@@ -9,6 +8,7 @@
   {"lastname": "Dejesus", "name": "Aryan Dejesus", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Demitrius", "name": "Steven Demitrius", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Dickson", "name": "Christopher Dickson", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
+  {"lastname": "Farris", "name": "Aiden Farris", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Fox", "name": "Ethan Fox", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Graney", "name": "Sean Graney", "positions": ["Rho", "Chi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Gutierrez", "name": "Rey Gutierrez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
@@ -30,6 +30,7 @@
   {"lastname": "Ngo", "name": "Huy Ngo", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Nguyen", "name": "Peter Nguyen", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Nogueira", "name": "Mario Nogueira", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
+  {"lastname": "Perez", "name": "Nathan Perez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Picton", "name": "Zach Picton", "positions": ["Pi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Pinto", "name": "Alexander Pinto", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Pio", "name": "Jack Pio", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
