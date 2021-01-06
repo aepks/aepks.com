@@ -25,7 +25,7 @@
   {"lastname": "Meyer", "name": "Joel Meyer", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Murphy", "name": "Christopher Murphy", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Mutnansky", "name": "Fredrick Mutnansky", "positions": ["Psi"], "classOf": "AE 2021", "visible": true, "hasImg": true},
-  {"lastname": "Myaris", "name": "Aleksander Myaris", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Myaris", "name": "Aleksander Myaris", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Negron", "name": "Hunter Negron", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Ngo", "name": "Huy Ngo", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Nguyen", "name": "Peter Nguyen", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
