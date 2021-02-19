@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "aepks.com",
-  "Id": "290bc369-19ec-4276-a1c9-030dbebb8a68"
-}
