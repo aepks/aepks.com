@@ -8,7 +8,7 @@
   {"lastname": "Dejesus", "name": "Aryan Dejesus", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Demitrius", "name": "Steven Demitrius", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
   {"lastname": "Fox", "name": "Ethan Fox", "positions": [], "classOf": "AE 2021", "visible": true, "hasImg": true},
-  {"lastname": "Graney", "name": "Sean Graney", "positions": ["Rho", "Chi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
+  {"lastname": "Graney", "name": "Sean Graney", "positions": ["Chi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Gutierrez", "name": "Rey Gutierrez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Haney", "name": "Zachary Haney", "positions": ["Lambda"], "classOf": "AE 2021", "visible": true, "hasImg": true},
   {"lastname": "Hawn", "name": "Ethan Hawn", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
@@ -43,7 +43,7 @@
   {"lastname": "Sran", "name": "Arshnoor Sran", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Villasenor", "name": "Roberto Villasenor", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Wagler", "name": "Jared Wagler", "positions": ["Sigma"], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "Walberg", "name": "Zachary Walberg", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Walberg", "name": "Zachary Walberg", "positions": ["Upsilon"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Walsh", "name": "Brandon Walsh", "positions": ["Tau"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Willertez", "name": "Alexander Willertez", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Knight", "name": "Knight", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true}
