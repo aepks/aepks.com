@@ -37,7 +37,7 @@
   {"lastname": "Sadaf", "name": "Zawad Sadaf", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Schmitz", "name": "Justin Schmitz", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Schultz", "name": "Bryant Schultz", "positions": ["Alpha"], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "Scott", "name": "Nathan Scott", "positions": ["Phi", "Kappa"], "classOf": "AE 2023", "visible": true, "hasImg": true},
+  {"lastname": "Scott", "name": "Nathan Scott", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Sherman", "name": "Christopher Sherman", "positions": ["Theta 3"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Spillman", "name": "Thomas Spillman", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
   {"lastname": "Sran", "name": "Arshnoor Sran", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
