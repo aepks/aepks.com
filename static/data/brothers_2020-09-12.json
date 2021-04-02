@@ -37,19 +37,19 @@
   {"lastname": "Sadaf", "name": "Zawad Sadaf", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Schmitz", "name": "Justin Schmitz", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Schultz", "name": "Bryant Schultz", "positions": ["Alpha"], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "Scott", "name": "Nathan Scott", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
+  {"lastname": "Scott", "name": "Nathan Scott", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Sherman", "name": "Christopher Sherman", "positions": ["Theta3"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Spillman", "name": "Thomas Spillman", "positions": [], "classOf": "AE 2020", "visible": true, "hasImg": true},
-  {"lastname": "Sran", "name": "Arshnoor Sran", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": false},
+  {"lastname": "Sran", "name": "Arshnoor Sran", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Villasenor", "name": "Roberto Villasenor", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Wagler", "name": "Jared Wagler", "positions": ["Sigma"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Walberg", "name": "Zachary Walberg", "positions": ["Upsilon"], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Walsh", "name": "Brandon Walsh", "positions": ["Tau"], "classOf": "AE 2023", "visible": true, "hasImg": true},
-  {"lastname": "Willertez", "name": "Alexander Willertez", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
+  {"lastname": "Willertz", "name": "Alexander Willertz", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Knight", "name": "Knight", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true}
 ],
 "advisors": [
-  {"lastname": "Zielinski", "name": "Tanner Zielinski", "positions": ["Resident Advisor"], "classOf": "AE 2019", "visible": true, "hasImg": false},
+  {"lastname": "Zielinski", "name": "Tanner Zielinski", "positions": ["Resident Advisor"], "classOf": "AE 2019", "visible": true, "hasImg": true},
   {"lastname": "Stevenson", "name": "Ricky Stevenson", "positions": ["Housing Corp. Pres."], "classOf": "AE 2016", "visible": true, "hasImg": true},
   {"lastname": "Bassett", "name": "Leo Bassett", "positions": ["Chapter Advisor"], "classOf": "AE 2009", "visible": true, "hasImg": true},
   {"lastname": "Doman", "name": "Gary Doman", "positions": ["Assistant Chapter Advisor"], "classOf": "AE 1986", "visible": true, "hasImg": true}
