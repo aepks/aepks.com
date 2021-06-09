@@ -22,6 +22,7 @@
   {"lastname": "Negron", "name": "Hunter Negron", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Ngo", "name": "Huy Ngo", "positions": ["Tau"], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Nogueira", "name": "Mario Nogueira", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
+  {"lastname": "Nowacki", "name": "Anthony Nowacki", "positions": [], "classOf": "AE 2024", "visible": true, "hasImg": false},
   {"lastname": "Perez", "name": "Nathan Perez", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Picton", "name": "Zach Picton", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Pinto", "name": "Alexander Pinto", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": false},
@@ -39,7 +40,7 @@
   {"lastname": "Knight", "name": "Knight", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true}
 ],
 "advisors": [
-  {"lastname": "Zielinski", "name": "Tanner Zielinski", "positions": ["Resident Advisor"], "classOf": "AE 2019", "visible": true, "hasImg": false},
+  {"lastname": "Zielinski", "name": "Tanner Zielinski", "positions": ["Resident Advisor"], "classOf": "AE 2019", "visible": true, "hasImg": true},
   {"lastname": "Stevenson", "name": "Ricky Stevenson", "positions": ["Housing Corp. Pres."], "classOf": "AE 2016", "visible": true, "hasImg": true},
   {"lastname": "Bassett", "name": "Leo Bassett", "positions": ["Chapter Advisor"], "classOf": "AE 2009", "visible": true, "hasImg": true},
   {"lastname": "Doman", "name": "Gary Doman", "positions": ["Assistant Chapter Advisor"], "classOf": "AE 1986", "visible": true, "hasImg": true}
