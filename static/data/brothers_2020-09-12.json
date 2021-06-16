@@ -29,7 +29,7 @@
   {"lastname": "Pion", "name": "Jason Pion", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true},
   {"lastname": "Sadaf", "name": "Zawad Sadaf", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Schultz", "name": "Bryant Schultz", "positions": ["Iota"], "classOf": "AE 2022", "visible": true, "hasImg": true},
-  {"lastname": "Scott", "name": "Nathan Scott", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": true},
+  {"lastname": "Scott", "name": "Nathan Scott", "positions": ["Phi"], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Sherman", "name": "Christopher Sherman", "positions": [], "classOf": "AE 2022", "visible": true, "hasImg": true},
   {"lastname": "Sran", "name": "Arshnoor Sran", "positions": ["Theta1"], "classOf": "AE 2023", "visible": true, "hasImg": false},
   {"lastname": "Villasenor", "name": "Roberto Villasenor", "positions": ["Rho"], "classOf": "AE 2022", "visible": true, "hasImg": true},
