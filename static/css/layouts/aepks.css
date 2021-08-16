@@ -299,6 +299,10 @@ li {
     color: #333;
 }
 
+.link-color {
+  color: rgba(207, 181, 59, 0.9);
+
+}
 /* This is the class used for the links at home. */
 
 /* change the size of the image when hover */
@@ -491,3 +495,4 @@ li {
         height: 800px;
     }
 }
+#
