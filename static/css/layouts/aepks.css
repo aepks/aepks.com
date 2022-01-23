@@ -270,6 +270,7 @@ li {
     color: white;
 }
 
+
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
     color: #1f8dd6;
@@ -303,6 +304,26 @@ li {
   color: rgba(207, 181, 59, 0.9);
 
 }
+
+/* This class is used for description styles on the recruitment page */
+
+.core-list.recruitment-description-gold {
+  background: #CFB53B; /* if browser doesn't support */
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(157,101,9,1), rgba(255,0,0,0)); /*Standard*/
+}
+
+.core-list.recruitment-description-white {
+  background: #343434; /* if browser doesn't support */
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(128, 128, 128,1), rgba(255,0,0,0)); /*Standard*/
+  color: #262672;
+}
+
+.core-list.recruitment-description-blue {
+  background: #2d3e50; /* if browser doesn't support */
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(45, 62, 80,1), rgba(255,0,0,0)); /*Standard*/
+}
+
+
 /* This is the class used for the links at home. */
 
 /* change the size of the image when hover */
