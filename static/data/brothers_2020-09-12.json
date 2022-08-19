@@ -32,7 +32,7 @@
   {"lastname": "Knight", "name": "Knight", "positions": [], "classOf": "AE 2023", "visible": true, "hasImg": true}
 ],
 "advisors": [
-  {"lastname": "Buffo", "name": "Alex Buffo", "positions": ["Resident Advisor"], "classOf": "AE 2018", "visible": true, "hasImg": true},
+  {"lastname": "Buffo", "name": "Alex Buffo", "positions": ["Resident Advisor"], "classOf": "AE 2018", "visible": true, "hasImg": false},
   {"lastname": "Stevenson", "name": "Ricky Stevenson", "positions": ["Housing Corp. Pres."], "classOf": "AE 2016", "visible": true, "hasImg": true},
   {"lastname": "Bassett", "name": "Leo Bassett", "positions": ["Chapter Advisor"], "classOf": "AE 2009", "visible": true, "hasImg": true},
   {"lastname": "Doman", "name": "Gary Doman", "positions": ["Assistant Chapter Advisor"], "classOf": "AE 1986", "visible": true, "hasImg": true}
