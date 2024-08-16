@@ -8,6 +8,7 @@
     <title>Brothers &ndash; Alpha Epsilon of Phi Kappa Sigma</title>
 
     <link rel="icon" type="image/gif/png" href="../img/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMS3y+5hdLO7T7T35LOxdhi5voU0aV0wZoVfiM" crossorigin="anonymous">
     <!-- Import Pure components -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 
@@ -47,13 +48,13 @@
         "Tau": "Tau (Treasurer)",
         "Sigma": "Sigma (Secretary)",
         "Chi": "Chi (Recruitment Chair)",
-        "Theta1": "Theta One (Kitchen Manager)",
-        "Theta2": "Theta Two (House Manager)",
-        "Theta3": "Theta Three (Cleanups Manager)",
+        "Theta 1": "Theta One (Kitchen Manager)",
+        "Theta 2": "Theta Two (House Manager)",
+        "Theta 3": "Theta Three (Cleanups Manager)",
         "Upsilon": "Upsilon (Alumni Relations)",
         "Phi": "Phi (Philanthropy Chair)",
         "Psi": "Psi (Social Chair)",
-        "Rho": "Rho (Brotherhood Events Chair)",
+        "Gamma": "Gamma (Greek Council Liason)",
         "AstTau": "Assistant Tau (Assistant Treasurer)",
         "Lambda": "Lambda (New Member Mentor)",
         "Epsilon": "Epsilon (Webmaster)"
@@ -85,9 +86,8 @@
 
             $("#active").append(makeAvatar(active, active.classOf));
             active.positions.forEach(function(position) {
-                let positionId = position.replace(" ", "-"); // id="" HTML tag
-                $(document.getElementById(positionId)).replaceWith(
-                    makeAvatar(active, officers[position]));
+                let positionId = position.replace(/\s/g, "-"); // id="" HTML tag
+                $(document.getElementById(positionId)).append(makeAvatar(active, officers[position]));
             });
         });
     }
@@ -107,7 +107,7 @@
 
     $(document).ready(function() {
         $.ajax({
-            url: "../data/brothers_2020-09-12.json", // path to file
+            url: "../data/brothers_2024-08-16.json", // path to file
             dataType: "json", // type of file (text, json, xml, etc)
             success: function(data) { // callback for successful completion
                 loadActives(data);
@@ -137,9 +137,6 @@
             <li class="pure-menu-item"><a href="../recruitment/" class="pure-menu-link">Recruitment</a></li>
             <li class="pure-menu-item"><a href="../contact/" class="pure-menu-link">Contact</a></li>
         </ul>
-        <div class="discord-menu">
-          <h2 class="pure-discord-heading">Join us on our <a href="https://discord.gg/x9Zh5dQ" target="_blank">Discord</a> server!</h2>
-        </div>
     </div>
 </div>
 
@@ -157,7 +154,14 @@
     <div class="content">
         <h2 class="content-head is-center">Executive Board</h2>
         <div id="exec">
-            <!-- REPLACE FROM SCRIPT --><div id="Alpha"></div><div id="Beta"></div><div id="Pi"></div><div id="Iota"></div><div id="Tau"></div><div id="Sigma"></div><div id="Chi"></div>
+            <!-- REPLACE FROM SCRIPT -->
+             <div id="Alpha"></div>
+             <div id="Beta"></div>
+             <div id="Pi"></div>
+             <div id="Iota"></div>
+             <div id="Tau"></div>
+             <div id="Sigma"></div>
+             <div id="Chi"></div>
         </div>
     </div>
 
@@ -165,7 +169,17 @@
     <div class="content">
         <h2 class="content-head is-center">Officers</h2>
         <div id="officer">
-            <!-- REPLACE FROM SCRIPT --><div id="Theta1"></div><div id="Theta2"></div><div id="Theta3"></div><div id="Upsilon"></div><div id="Phi"></div><div id="Psi"></div><div id="Rho"></div><div id="AstTau"></div><div id="Lambda"></div><div id="Epsilon"></div>
+            <!-- REPLACE FROM SCRIPT -->
+             <div id="Theta-1"></div>
+             <div id="Theta-2"></div>
+             <div id="Theta-3"></div>
+             <div id="Upsilon"></div>
+             <div id="Phi"></div>
+             <div id="Psi"></div>
+             <div id="Gamma"></div>
+             <div id="AstTau"></div>
+             <div id="Lambda"></div>
+             <div id="Epsilon"></div>
         </div>
     </div>
 
@@ -187,25 +201,18 @@
 
     <!-- Footer -->
     <div class="footer l-box is-center">
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://pks.org/" class="footer-link">Phi Kappa Sigma International Fraternity</a>, Inc. - All Rights Reserved.</p>
-        <br/>
-        <a href="https://www.facebook.com/aepks/" class="footer-link">
-            <svg class="icon" aria-hidden="true" focusable="false">
-                <use xlink:href="../img/common/icons.svg#facebook"></use>
-            </svg>
-        </a>
-        /
-        <a href="https://www.instagram.com/phikappasigmaiit/" class="footer-link">
-            <svg class="icon" aria-hidden="true" focusable="false">
-                <use xlink:href="../img/common/icons.svg#instagram"></use>
-            </svg>
-        </a>
-        /
-        <a href="https://www.linkedin.com/groups/8829192/" class="footer-link">
-            <svg class="icon" aria-hidden="true" focusable="false">
-                <use xlink:href="../img/common/icons.svg#linkedin"></use>
-            </svg>
-        </a>
+        <p> 
+          Copyright &copy; 
+          <script>document.write(new Date().getFullYear())</script> 
+          <a href="https://pks.org/" class="footer-link">Phi Kappa Sigma International Fraternity</a>, Inc. - All Rights Reserved.
+        </p>
+        <div class="footer-icons">
+          <ul>
+            <li><a href="https://www.facebook.com/aepks/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/phikappasigmaiit/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/groups/8829192/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+          </ul>
+        </div>
     </div>
 
 </div>
